@@ -1,7 +1,7 @@
 addNavbar=function(){
 	var newdiv = document.getElementById("menu-wrapper");
 	newdiv.innerHTML='\
-	<div class="navbar navbar-inverse navbar-fixed-top">\
+	<div class="nav navbar navbar-nav navbar-inverse">\
 		  <div class="navbar-inner">      \
 			<div class="container">    \
 			  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">  \
@@ -23,3 +23,5 @@ addNavbar=function(){
 	</div>\
 	';
 }
+
+//nav navbar-nav navbar-right
