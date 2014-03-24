@@ -15,7 +15,7 @@ addNavbar=function(){
 				  <li><a href="Parcours.html">Parcours académique</a></li>        \
 				  <li><a href="Experience.html">Expériences professionnelles</a></li>        \
 				  <li><a href="Projets.html">Projets</a></li>        \
-				  <li><a href="http://www.ngaumont.fr/owncloud/" target="_blank">Cloud privé</a></li>        \
+				  <li><a href="http://owncloud.ngaumont.fr" target="_blank">Cloud privé</a></li>        \
 				</ul>                                           \
 			  </div><!--/.nav-collapse -->                     \
 			</div>                                         \
