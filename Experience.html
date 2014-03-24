@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gaumont Noe - Expériences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="asset/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px;
+      }
+    </style>
+	<script type="text/javascript" src="asset/js/env.js"></script>	
+ </head>
+
+<body data-target=".bs-docs-sidebar" data-spy="scroll" onload="addNavbar();"> 
+	<div id="menu-wrapper">      
+	</div>
+	<div class="container-fluid">  
+		<div class ="row-fluid" >			
+			 <!-- Docs nav
+			================================================== -->
+			<div class="span2 bs-docs-sidebar"  >
+				<ul class="nav nav-list bs-docs-sidenav affix" data-spy="affix" data-offset-top="60">
+						<li><a href="#Thales"><i class="icon-chevron-right"></i>Thales</a></li>
+						<li><a href="#CEA"><i class="icon-chevron-right"></i>CEA</a></li>
+				</ul>
+			</div>
+			  
+			<div class="span8 presentation" >
+				<div id="Thales" class="anchor presentation">
+					<h2> Stage au sein de Thales Air System:</h2>
+				</div>
+					
+					<h5>du 4 févirer 2013 au 31 juillet 2013</h5>					
+				
+				<p>
+					Mon stage de fin d'étude s'est déroulé au sein d'une petite cellule d'innovation composée d'environ 8 personnes.
+					L'objectif de l'équipe est d'étudier la possibilité d'intégrer les nouvelles technologies dans le domaine de la gestion de trafic aérien.
+					Pour ce faire, l'équipe réalise des <em>Proof of Concept</em> permettant d'évaluer la plus-value que les nouvelles technologies peuvent apporter.<br><br>
+					
+					Le sujet de mon stage était l'étude de la prédictibilité des points caractéristiques d’un vol.
+					Pour ce faire, une approche <em>data-driven</em> a été adoptée avec l'utilisation de nombreux enregistrements de vols d'avion.
+					Les méthodes de prédiction ont été implémentées en <strong>C++</strong> et l'étude des résultats a été réalisée avec <strong>R</strong>.
+				</p>
+				<p>
+					Vous pouvez visionner mon rapport de stage <a href="asset/doc/Rapport_stage_InnovationLab.pdf">ici</a> et mon poster de soutenance <a href="asset/doc/PosterThales.pdf">ici</a>.<br>
+					J'ai également réalisé une présentation html avec <em>reveal.js</em> <a href="asset/PresThales/index.html">ici</a>.
+				</p>
+			
+				<div id="CEA" class="anchor presentation">
+					<h2>Stage au sein du CEA:</h2>
+				</div>
+					<h5>du 3 septembre 2011 au 17 février 2012</h5>
+				<p>
+					Création d'un algorithme de génération de <a href="https://fr.wikipedia.org/wiki/Maillage">maillage</a> quadrangulaire en <strong>C++</strong>. <br><br>
+					
+					Lors d’une simulation numérique Lagrangienne, le maillage utilisé se déforme et ainsi suit l’évolution
+					spatiale des différents matériaux présents. Ce fonctionnement permet de bien cerner les mouvements
+					présents. Cependant il peut aussi mener à un maillage invalide si les déformations sont trop fortes. Or
+					la qualité de la simulation est directement liée à la qualité du maillage. C’est pourquoi, une attention
+					particulière est portée sur la qualité du maillage que ce soit, de manière statique lors de la création
+					du maillage avant le lancement de la simulation, ou de manière dynamique en modifiant le maillage
+					(topologie et géométrie) en cours de simulation. On parle alors d’adaptation de maillage. <br><br>
+					C’est dans ce contexte que s'est déroulé mon stage dont l’objectif est de développer un algorithme permettant de mailler avec des quadrilatères un domaine 2D à un seul bord en tenant compte d’un champ de
+					directions défini sur le bord. Cet algorithme sera par la suite intégré dans un code d’étude simulant des
+					problèmes d’hydrodynamique compressible.
+					L’idée est qu’il puisse servir statiquement pour générer le maillage initial mais aussi dynamiquement
+					(en cours de simulation) pour remailler une zone donnée en suivant par exemple comme champ de
+					directions, celui des vitesses nodales à l’itération précédente.<br><br>
+				</p>
+				<p>
+					Vous pouvez visionner mon rapport de stage <a href="asset/doc/RapportStageCEA.pdf">ici</a> et mon poster de soutenance <a href="asset/doc/PosterCEA.pdf">ici</a>.<br><br>
+				</p>
+				
+					
+			</div>
+		</div>
+	</div>	
+  </body>
+</html>
+

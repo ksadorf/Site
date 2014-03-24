@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+
+		<title>TP learning</title>
+
+		<meta name="description" content="Different way to predict trajectory">
+		<meta name="author" content="Gaumont Noé">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/fullscreen-img.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section fullscreen-img="ressource/background_innovation.jpg">
+					<h1>TP Learning</h1>
+					<p><big>Trajectory prediction accuracy and its improvement</big></p>
+					<p>
+						<small>Created by <span style="color:#8b0909"><b>Gaumont Noé</b></span> supervised by <span style="color:#8b0909"><b>Hadjaz Areski</b></span> and <span style="color:#8b0909"><b>Marceau-Caron Gaetan</b></span> </small>
+					</p>
+				</section>
+				<section fullscreen-img="ressource/background_innovation.jpg">
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>what is the purpose of this study ?</h2>
+						<p>
+							Study of temporal predictions on characteristic trajectory points, such as the top of climb.
+							In order to do so, real tracks and predictions are used in two ways:						
+						</p>
+						</br>
+						<ul>
+							<li><p>Rate the predictions made by the FMS or with BADA</p> </li>
+							<li><p>Develop innovative methods which hopefully make better predictions</p></li>
+						</ul>
+					</section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>Which points are studied?</h2>
+						<img src="ressource/Profil.png">
+					</section>
+					
+				</section>				
+				
+
+				<!-- Example of nested vertical slides data-transition="linear" data-background="#4d7e65" data-background-transition="slide" -->
+				<section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>FMS Predictions</h2>
+						<img width='90%'  src="ressource/ErreurFMS.PNG">
+					</section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>Bada Prediction</h2>
+						<img src="ressource/ErreurBADA.png">
+					</section>
+					<section fullscreen-img="ressource/ErreurBADA.png" fullscreen-size="contain">
+				  </section>
+				</section>
+				
+				<section fullscreen-img="ressource/background_innovation.jpg">
+					<h2>Are the new method more effective or more efficient?</h2>
+					<p>
+						Several methods have been tested during the intership:
+						<ul>
+							<li>Some of them <span style="color:#ff0000">aren't</span> competitive </li>
+							<li>Some of them <span style="color:#2bbcf0">could be</span> competive</li>
+							<li>Some of them <span style="color:#00e500">are</span> competive</li>
+						</ul>
+					</p>
+				</section>
+
+
+				  
+				
+				<section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>Extrapolation <span style="color:#ff0000">doesn't</span> work</h2>
+						
+						<h4  style='text-align:left'>What is the method?</h4>
+						<p style="margin-left: 1em;">
+							Using aircraft previous positions in order to extrapolate futur positions, ie fit a curve to the flight profile.
+							
+						</p>
+						
+					</section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>What is the method?</h2>
+						<img src="ressource/untitled1.PNG" >
+					</section>
+					<section fullscreen-img="ressource/untitled1.PNG" fullscreen-size="contain" data-background-transition="slide"></section>
+					<section fullscreen-img="ressource/untitled2.PNG" fullscreen-size="contain" data-background-transition="slide"></section>
+					<section fullscreen-img="ressource/untitled3.PNG" fullscreen-size="contain" data-background-transition="slide"></section>
+					<section fullscreen-img="ressource/untitled4.PNG" fullscreen-size="contain" data-background-transition="slide"></section>
+					
+					<section fullscreen-img="ressource/background_innovation.jpg">
+							<h2>Results:</h4>
+							<p style="margin-left: 1em;">
+								It's a <span class="fragment highlight-red">complex</span> method with an expensive computation time.
+								This method needs a <span class="fragment highlight-red">lot of past positions</span> to achieve an accurate prediction.
+							</p>
+					</section>
+					
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>Results</h2>
+						<img src="ressource/ErreurExtraPol.png">
+					</section>
+					<section fullscreen-img="ressource/ErreurExtraPol.png" fullscreen-size="contain">
+				  </section>
+				</section>
+				<section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>Prediction correction <span style="color:#2bbcf0">could</span> works</h2>
+						<h4  style='text-align:left'>What is the method?</h4>
+						<p style="margin-left: 1em;">
+							Use existing predictions and then improve them.</br>
+							Learn an offset to apply from predictions made by the FMS.
+							The computed offset depends	on the remaining time before the estimated TOC.
+						</p>
+					</section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>FMS Predictions</h2>
+						<img width='90%'  src="ressource/ErreurFMS.PNG">
+					</section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+							<h2>Results:</h2>
+							<p style="margin-left: 1em;">
+								Corrections are pretty good for <span class="fragment highlight-green">long term</span> prediction, for <span class="fragment highlight-red">shorter</span> prediction corrections are poorer.
+								There is still a lot of <span class="fragment highlight-red">uncertainty</span> even for short term predictions.
+								If the FMS makes erratic prediction, this method will be affected.
+							</p>
+					</section>
+					
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>Results</h2>
+						<img src="ressource/ErreurCor.PNG">
+					</section>
+				</section>
+				
+				<section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>Construct an adaptative BADA <span style="color:#00e500">works</span></h2>
+						<h4  style='text-align:left'> What is the method?</h4>
+						<p style="margin-left: 1em;">
+							Just like for BADA, compute the rate of climb for each layer.
+							The ROC are learned from a dataset.
+							The main difference is that an entire distribution is stored for each layer instead of a single value for the BADA.
+							The flight history will also be taken into account by storing the rank in the distribution for each ROC recorded.
+							Future ROC are estimated according to this history
+						</p>					
+					</section>
+				
+					<section fullscreen-img="ressource/background_innovation.jpg">
+							<h2>What is the method?</h2>
+							<img src="ressource/GrapheFonctionnement.png">
+					</section>
+					
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2 >Results:</h2>
+							<p style="margin-left: 1em;">
+								Predictions are <span class="fragment highlight-green">more accurate</span>.
+								There is <span class="fragment highlight-green">less uncertainty</span> in prediction.
+								This method use only <span class="fragment highlight-green">trustworthy data</span>, currently collected by ADS-B
+							</p>
+					</section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+							<h2>Results</h2>
+							<img src="ressource/ErreurAdaptative1.PNG">
+					</section>
+					<section fullscreen-img="ressource/ErreurAdaptative1.png" fullscreen-size="contain"></section>
+					<section fullscreen-img="ressource/background_innovation.jpg">
+						<h2>Results</h2>
+						<img src="ressource/ErreurAdaptative.PNG">
+					</section>
+					<section fullscreen-img="ressource/ErreurAdaptative.png" fullscreen-size="contain"></section>
+				</section>
+				
+				<section data-transition="fade" fullscreen-img="ressource/background_innovation.jpg">
+					<h1>questions?</h1>
+				</section>
+				<section data-transition="fade" fullscreen-img="ressource/background_innovation.jpg">
+					<h1>Thank you for your attention</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/fullscreen-img.js' },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
