@@ -2,41 +2,411 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Gaumont Noe</title>
+    <title>Noé Gaumont</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="asset/bootstrap/css/bootstrap.css" rel="stylesheet">
-	<script type="text/javascript" src="asset/js/env.js"></script>	
+    <link href="main.css" rel="stylesheet">
  </head>
 
-  <body onload="addNavbar();"> 
-	<div id="menu-wrapper">      
+  <body>
+    <div id="wrapper">
+			<header id="site_header">
+				<h1 id="site_title">Noé Gaumont</h1>
+				<nav>
+					<ul id="top-nav">
+            <li><a href="/#Description">Description</a></li>
+						<li><a href="/#Publications">Publications</a></li>
+						<li><a href="/#Professionnelles">Expériences professionnelles</a></li>
+						<!-- <li><a href="/#Personnelles">Expériences personnelles</a></li> -->
+						<li><a href="/#Contact">À propos</a></li>
+					</ul>
+				</nav>
+			</header>
+
+
+			<main>
+        <section id="Description">
+          <h2>Bienvenue</h2>
+          <article>
+            <p>
+    					Je suis en post-doctorat au Centre d’analyse et de mathématique sociales (<a href="http://cams.ehess.fr/">CAMS</a>) et je suis résident de l'nstitut des Systèmes Complexes de Paris Ile-de-France (<a href="https://iscpif.fr/">ISC-PIF</a>).
+               J'étudie principalement la structure de réseaux, en particulier, lorsqu'ils sont dynamiques (réseau face-à-face, Twitter, liste de discussions).
+    				</p>
+
+            <p>
+              Je m'intéresse également aux logiciels libres, à la décentralisation et aux questions sur la vie privé. <br>
+              En ce moment, je découvre le langage rust et spark dans le cadre de mon travail.
+    				</p>
+          </article>
+        </section>
+
+        <section id="Publications">
+          <h2>Publications</h2>
+          <article>
+            <h3><span class="sigle title"></span>Journaux internationaux</h3>
+            <div class="publications long-desc">
+              <div class="publication">
+                <div class="publi">
+                  <p class="publi-title">
+                    Finding remarkably dense sequences of contacts in link streams
+                  </p>
+                  <p class="personne">
+                    Noé Gaumont, Clémence Magnien and Matthieu Latapy
+                  </p>
+                  <p class="lieu-pub">
+                    Social Network Analysis and Mining, 6(1), 87
+                  </p>
+                </div>
+                <div class="partage-publi">
+                  <p class="pdf">
+                    <a href="https://hal.archives-ouvertes.fr/hal-01390043">pdf</a>
+                  </p>
+                  <!-- <p class="bibtex">
+                    <a href="">bibtex</a>
+                  </p>
+                  <p class="slides">
+                    <a href="">slides</a>
+                  </p> -->
+                </div>
+              </div>
+
+              <div class="publication">
+                <div class="publi">
+                  <p class="publi-title">
+                     Methods for the reconstruction of the socio-semantic dynamics of political activist Twitter networks: Application to the 2017 French Presidential elections
+                  </p>
+                  <p class="personne">
+                    Noe Gaumont, Maziyar Panahi and David Chavalarias
+                  </p>
+                  <p class="lieu-pub">
+                    En cours de soumission
+                  </p>
+                </div>
+                <div class="partage-publi">
+                  <p class="pdf">
+                    <a href="https://hal.archives-ouvertes.fr/hal-01575456v2">pdf</a>
+                  </p>
+                  <!-- <p class="bibtex">
+                    <a href="">bibtex</a>
+                  </p>
+                  <p class="slides">
+                    <a href="">slides</a>
+                  </p> -->
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <h3 class="title"><span class="sigle title"></span>Conférences internationales</h3>
+            <div class="publications long-desc">
+              <div class="publication">
+                <div class="publi">
+                  <p class="publi-title">
+                    Analysis of the temporal and structural features of threads in a mailing-list
+                  </p>
+                  <p class="personne">
+                    Noé Gaumont, Tiphaine Viard, Raphaél Fournier-S'niehotta, Qinna Wang and Matthieu Latapy
+                  </p>
+                  <p class="lieu-pub">
+                    Complex Networks VII, Dijon, France. 2016. Acceptation rate: 23%
+                  </p>
+                </div>
+                <div class="partage-publi">
+                  <p class="pdf">
+                    <a href="https://hal.archives-ouvertes.fr/hal-01345821">pdf</a>
+                  </p>
+                  <!-- <p class="bibtex">
+                    <a href="">bibtex</a>
+                  </p> -->
+                  <p class="slides">
+                    <a href="/asset/Presentation/Presentation_Gaumont.pdf">slides</a>
+                  </p>
+                </div>
+              </div>
+              <div class="publication">
+                <div class="publi">
+                  <p class="publi-title">
+                    Expected Nodes: a quality function for the detection of link communities
+                  </p>
+                  <p class="personne">
+                    Noé Gaumont, François Queyroi, Clémence Magnien and Matthieu Latapy
+                  </p>
+                  <p class="lieu-pub">
+                    Complex Networks VI, New-York, USA. 2015. Acceptation rate: 20%
+                  </p>
+                </div>
+                <div class="partage-publi">
+                  <p class="pdf">
+                    <a href="http://hal.upmc.fr/hal-01196796">pdf</a>
+                  </p>
+                  <!-- <p class="bibtex">
+                    <a href="">bibtex</a>
+                  </p> -->
+                  <p class="slides">
+                    <a href="/asset/Presentation/CompleNet_Slide.pdf">slides</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <h3><span class="sigle title"></span>Conférences nationales</h3>
+            <div class="publications long-desc">
+              <div class="publication">
+                <div class="publi">
+                  <p class="publi-title">
+                    Trouver des séquences de contacts pertinentes dans un flot de liens
+                  </p>
+                  <p class="personne">
+                    Noé Gaumont
+                  </p>
+                  <p class="lieu-pub">
+                    Algotel - 18èmes Rencontres francophones sur les Aspects Algorithmiues des Télécommunication, Bayonne, France. 2016. Acceptation rate: 60%
+                  </p>
+                </div>
+                <div class="partage-publi">
+                  <p class="pdf">
+                    <a href="ttps://hal.archives-ouvertes.fr/hal-01305118">pdf</a>
+                  </p>
+                  <!-- <p class="bibtex">
+                    <a href="">bibtex</a>
+                  </p> -->
+                  <p class="slides">
+                    <a href="/asset/Presentation/Presentation_Algotel_2016.pdf">slides</a>
+                  </p>
+                </div>
+              </div>
+              <div class="publication">
+                <div class="publi">
+                  <p class="publi-title">
+                    Partitionnement des liens d'un graphe : Critéres et Mesures
+                  </p>
+                  <p class="personne">
+                    Noé Gaumont and François Queyroi
+                  </p>
+                  <p class="lieu-pub">
+                    Algotel - 16èmes Rencontres francophones sur les Aspects Algorithmiues des Télécommunication, Ile de ré, France. 2014. Acceptation rate: 55%
+                  </p>
+                </div>
+                <div class="partage-publi">
+                  <p class="pdf">
+                    <a href="https://hal.archives-ouvertes.fr/hal-00986216">pdf</a>
+                  </p>
+                  <!-- <p class="bibtex">
+                    <a href="">bibtex</a>
+                  </p> -->
+                  <p class="slides">
+                    <a href="/asset/Presentation/algotel_Slide.pdf">slides</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <h3><span class="sigle title"></span>Workshops et présentations à audience internationale</h3>
+            <div class="publications long-desc">
+              <div class="publication">
+                <div class="publi">
+                  <p class="publi-title">
+                    Evolution of communities on twitter during the 2017 French presidential election
+                  </p>
+                  <p class="personne">
+                    Noé Gaumont, Maziyar Panahi and David Chavalarias
+                  </p>
+                  <p class="lieu-pub">
+                    Conference Complex Systems (CCS). 2017
+                  </p>
+                </div>
+                <div class="partage-publi">
+                  <p class="slides">
+                    <a href="/asset/Presentation/Gaumont_CCS.pdf">slides</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="publication">
+                <div class="publi">
+                  <p class="publi-title">
+                    LinkStreamViz: a drawing tool for link stream
+                  </p>
+                  <p class="personne">
+                    Tiphaine Viard and Noé Gaumont
+                  </p>
+                  <p class="lieu-pub">
+                    Workshop Dynamics On and Of networks. 2016
+                  </p>
+                </div>
+                <div class="partage-publi">
+                  <p class="bibtex">
+                    <a href="https://github.com/TiphaineV/streamfig">codes</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="publication">
+                <div class="publi">
+                  <p class="publi-title">
+                    Bringing density to link streams reveals meaningful groups
+                  </p>
+                  <p class="personne">
+                    Noé Gaumont, Clémence Magnien and Matthieu Latapy
+                  </p>
+                  <p class="lieu-pub">
+                    workshop e-Young Researchers Network in Complex Systems. 2015
+                  </p>
+                </div>
+                <div class="partage-publi">
+                  <p class="bibtex">
+                    <a href="http://cs-dc-15.org/e-tracks/global/#yr">video</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="Professionnelles">
+          <h2>Expériences professionnelles</h2>
+
+          <article>
+  					<h3 class="title"><span class="sigle title"></span>Post-Doctorat au CAMS et résident à l'ISC-PIF <span class="date">depuis octobre 2016</span></h3>
+            <div  class="long-desc">
+              <p>
+                Twitter est devenu un nouveau média d’information ainsi qu’un passage obligé pour tout groupe qui cherche à influencer l’opinion publique d’une manière ou d’une autre, y compris pour certains, en publiant de fausses informations (« fake news »).
+                Les réseaux sociaux grossissent ainsi la masse de données dans laquelle nous sommes chaque jour plongés, et qui tend à nous détourner d’une analyse approfondie de l’actualité.
+              </p>
+              <p>
+                Les équipes de campagne utilisent désormais les services de sociétés d’étude des médias et réseaux sociaux qui leur produisent des analyses et des tendances concernant les aspirations des citoyens.
+                Ces analyses sont réservées à un petit nombre d’utilisateurs ; les méthodologies sont la plupart du temps confidentielles.
+              </p>
+              <p>
+                Le but du Politoscope est d’inverser les rôles en permettant au “grand public” de plonger dans les masses de données générées sur les réseaux sociaux à l’approche des présidentielles grâce à des outils et méthodes d’analyses produites par la recherche.
+                L’ambition de ce macroscope est d’une part, d’aider à mieux contextualiser sur le temps long les prises de parole des hommes politiques; d’autre part, de permettre d’identifier sur les temps courts des actions collectives visant à déplacer le débat public.
+              </p>
+
+              <p>
+                J'ai pour ce faire participé à la mise en place de la plateforme <a href="https://politoscope.org/">politoscope.org</a> qui retrace sur le temps long les prises de parles des différents candidats sur différents thèmes.
+                Cela a nécessité d'important travaux sur l'analyse de la structure des militants sur Twitter:
+              </p>
+              <img src="./asset/Politoscope.png" desc="Twittosphère politique pré-électorale calculée sur les mois d’août à décembre 2016." >
+
+              <p>
+                J'ai également étudié les reconfigurations des communautés politiques au cours du temps:
+              </p>
+              <img src="./asset/alluvial.png" desc="Reconfiguration des communautés politiques entre aout 2016 et le second tour des élections présidentielles." >
+
+              <p>
+                Encadrant : <a href='https://iscpif.fr/chavalarias/'>David Chavalarias</a>.<br>
+                Lieu: <a href="https://iscpif.fr/">ISC-PIF</a>.
+              </p>
+            </div>
+          </article>
+
+          <article>
+  					<h3 class="title"><span class="sigle title"></span>Thèse de doctorat au <a href="http://www.lip6.fr/">LIP6</a> <span class="date">1 octobre 2013 au 11 octobre 2016</span></h3>
+            <div  class="long-desc">
+              <p>
+                Au cours de ma thèse, j'ai étudié le problème de la détection de communautés dans les séquences d'interactions.
+                Une interaction est définie par deux entités, l'instant où l'interaction a lieu et éventuellement une durée.
+                L'étude de ce type de donné dans la littérature est encore récente et il n'existe aucune taxonomie faisant consensus.
+              </p>
+              <p>
+                On peut représenter une séquence d'interactions de la façon suivante :
+              </p>
+
+								<img src="./asset/Flot_de_liens.svg" desc="Image représentant un flot de liens avec les noeuds sur l'axe des ordonnées et le temps en abscisse." >
+              <p>
+                J'ai pris le parti de considérer le formalisme de flots de liens et avec ce formalisme, de considérer les partitions de liens comme structures communautaires.
+                À partir de ce présupposé, j'ai défini plusieurs métriques et décrit des structures communautaires existantes avant de proposer une méthode d'évaluation de la pertinence d'un groupe.
+                Enfin, j'ai également entamé les premiers travaux de génération de flots de liens avec une structure communautaire.
+              </p>
+              <p>
+                En menant ces travaux liant théorie et application, j'ai constamment partagé les résultats obtenus: les données récoltées, la théorie proposée et l'implémentation développée.
+                Avec cette démarche, j'espére ainsi faciliter les échanges entre chercheurs pour faire avancer la recherche dans ce domaine ouvert où beaucoup reste à faire, tant au niveau théorique que pratique.
+              </p>
+              <p>
+                Mon manuscript de thèse est en franças et est acessible <a href="https://github.com/ksadorf/These/raw/master/These_main.pdf">ici</a>.<br>
+                Les slides de ma présentation sont <a href="/asset/Presentation/Presentation_These.pdf">la</a>. <br>
+                Encadrants : <a href='http://www-rp.lip6.fr/~magnien/'>Clémence Magnien</a> et <a href='http://www-rp.lip6.fr/~latapy/'>Matthieu Latapy</a>.<br>
+                Lieu: <a href="http://www.lip6.fr/">LIP6</a> dans l'équipe <a href="http://www.complexnetworks.fr/">complexNetwork</a>.
+              </p>
+            </div>
+          </article>
+
+          <article id="Thales" class="init-collapsed">
+  					<h3 class="title"><span class="sigle title"></span>Stage au sein de Thales Air System <span class="date">4 févirer 2013 au 31 juillet 2013</span></h3>
+            <div class="long-desc">
+      				<p>
+      					Mon stage de fin d'étude s'est déroulé au sein d'une petite cellule d'innovation composée d'environ 8 personnes.
+      					L'objectif de l'équipe est d'étudier la possibilité d'intégrer les nouvelles technologies dans le domaine de la gestion de trafic aérien.
+      					Pour ce faire, l'équipe réalise des <em>Proof of Concept</em> permettant d'évaluer la plus-value que les nouvelles technologies peuvent apporter.<br><br>
+
+      					Le sujet de mon stage était l'étude de la prédictibilité des points caractéristiques d’un vol.
+      					Pour ce faire, une approche <em>data-driven</em> a été adoptée avec l'utilisation de nombreux enregistrements de vols d'avion.
+      					Les méthodes de prédiction ont été implémentées en <strong>C++</strong> et l'étude des résultats a été réalisée avec <strong>R</strong>.
+      				</p>
+      				<p>
+      					Vous pouvez visionner mon rapport de stage <a href="asset/doc/Rapport_stage_InnovationLab.pdf">ici</a> et mon poster de soutenance <a href="asset/doc/PosterThales.pdf">ici</a>.<br>
+      					J'ai également réalisé une présentation html avec <em>reveal.js</em> <a href="asset/PresThales/index.html">ici</a>.
+      				</p>
+            </div>
+        </article>
+
+        <article id="CEA" class="init-collapsed">
+          <h3 class="title"><span class="sigle title"></span>Stage au sein du CEA <span class="date">3 septembre 2011 au 17 février 2012</span></h3>
+
+          <div class="long-desc">
+    				<p>
+    					Création d'un algorithme de génération de <a href="https://fr.wikipedia.org/wiki/Maillage">maillage</a> quadrangulaire en <strong>C++</strong>. <br><br>
+
+    					Lors d’une simulation numérique Lagrangienne, le maillage utilisé se déforme et ainsi suit l’évolution
+    					spatiale des différents matériaux présents. Ce fonctionnement permet de bien cerner les mouvements
+    					présents. Cependant il peut aussi mener à un maillage invalide si les déformations sont trop fortes. Or
+    					la qualité de la simulation est directement liée à la qualité du maillage. C’est pourquoi, une attention
+    					particulière est portée sur la qualité du maillage que ce soit, de manière statique lors de la création
+    					du maillage avant le lancement de la simulation, ou de manière dynamique en modifiant le maillage
+    					(topologie et géométrie) en cours de simulation. On parle alors d’adaptation de maillage. <br><br>
+    					C’est dans ce contexte que s'est déroulé mon stage dont l’objectif est de développer un algorithme permettant de mailler avec des quadrilatères un domaine 2D à un seul bord en tenant compte d’un champ de
+    					directions défini sur le bord. Cet algorithme sera par la suite intégré dans un code d’étude simulant des
+    					problèmes d’hydrodynamique compressible.
+    					L’idée est qu’il puisse servir statiquement pour générer le maillage initial mais aussi dynamiquement
+    					(en cours de simulation) pour remailler une zone donnée en suivant par exemple comme champ de
+    					directions, celui des vitesses nodales à l’itération précédente.<br><br>
+    				</p>
+    				<p>
+    					Vous pouvez visionner mon rapport de stage <a href="asset/doc/RapportStageCEA.pdf">ici</a> et mon poster de soutenance <a href="asset/doc/PosterCEA.pdf">ici</a>.<br><br>
+    				</p>
+          </div>
+        </article>
+        </section>
+
+        <!-- <section id="Personnelles">
+          <h2>Expériences personnelles</h2>
+          <article>
+            blabla générale
+          </article>
+        </section> -->
+        <section id="Contact">
+          <h2>À propos</h2>
+          <article>
+            <p>
+              Vous pouvez me contacter par mail: prenom@ngaumont.fr<br>
+              Mon cv est disponible sur <a href="https://github.com/ksadorf/resume/raw/master/resume_fr.pdf">github</a>.<br>
+            </p>
+            <p>
+              J'ai également des comptes <a href="https://twitter.com/ksadorf">twitter</a> et <a href="https://social.wxcafe.net/@ngaumont">mastodon</a> pour discuter.
+            </p>
+          </article>
+        </section>
+      </main>
     </div>
-	<div class="container-fluid">  
-		<div class ="row-fluid" >	
-			<div class="span7 offset2 presentation">
-				<h1>Bienvenue</h1>
-				<p>
-					Je suis actuellement doctorant au laboratoire d'informatique de paris 6 (<a href="http://www.lip6.fr/">LIP6</a>) dans l'équipe <a href="http://www.complexnetworks.fr/">complexNetwork</a>.
-					Mes directeurs de thèse sont <a href='http://www-rp.lip6.fr/~magnien/'>Clémence Magnien</a> et <a href='http://www-rp.lip6.fr/~latapy/'>Matthieu Latapy</a>.
-					Mes travaux concernent l'étude des flots de liens et plus particulièrement la détection de communautés dans ces flots de liens.
-					Plus de détails sur ma <a href="Parcours.html#These">thèse</a>.					
-				</p>
-				<p>
-				
-				<p>
-					Si vous souhaitez me contacter, envoyez moi un <a href="mailto:noe.gaumont@gmail.com">mail</a>. Vous pouvez également voir mon <a href="asset/doc/GaumontNoe_CoverLetter.pdf">cv</a>
-					
-				</p>
-			</div>
-		
-		</div>
-	</div>
-	
-	
+    <script src="main.js"></script>
+
   </body>
 </html>
-
