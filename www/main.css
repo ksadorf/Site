@@ -186,16 +186,24 @@ section article.collapsed h3 .sigle{
   -o-transform:rotate(540deg);
 }
 
+section article h3 {
+  cursor:pointer;
+}
+
 
 section article .long-desc{
-  overflow: hidden;
-  max-height: 1000px;
-  -webkit-transition: max-height 0.3s;
-  -moz-transition: max-height 0.3s;
-  -ms-transition: max-height 0.3s;
-  -o-transition: max-height 0.3s;
-  transition: max-height 0.3s;
+  /* overflow: hidden; */
+  /* max-height: 1000px; */
+  -webkit-transition: display 0.3s;
+  -moz-transition: display 0.3s;
+  -ms-transition: display 0.3s;
+  -o-transition: display 0.3s;
+  transition: display 0.3s;
 }
 section article.collapsed .long-desc{
-  max-height: 0;
+  display: none;
+}
+
+section.hide{
+  display:none;
 }
